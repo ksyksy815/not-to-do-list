@@ -1,11 +1,11 @@
 import React from 'react';
-import { GlobalStyles } from './styles/GlobalStyles'
+import Window from './pages/Window'
 
 function App() {
   return (
     <>
-      <GlobalStyles />
       <div className="App">
+        <Window />
       </div>
     </>
   );
