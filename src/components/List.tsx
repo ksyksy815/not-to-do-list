@@ -1,33 +1,25 @@
 import styled from 'styled-components'
-import Todo from './Todo'
 
-const StyledUl = styled.ul`
+const StyledList = styled.ul`
   width: 100%;
+  max-width: 400px;
+  height: 90%;
+  max-height: 800px;
+  background: #fff;
+  border-radius: 10px;
+  border-top: 20px solid var(--dark-pink);
+  border-bottom: 20px solid var(--dark-pink);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  row-gap: 1rem;
 `
 
 
-interface ListProps {
-  todo: {
-    id: number
-    content: string
-    completed: boolean
-  }
-}
-
-function List( {todo}: ListProps ) {
-
+export default function List() {
   return (
-    <StyledUl>
-      {
-        todos.map(todo => 
-        <Todo key={todo.id} id={todo.id} content={todo.content} completed={todo.completed}/>)
-      }
-    </StyledUl>
+    <StyledList>
+      list
+    </StyledList>
   )
 }
-export default List

@@ -1,5 +1,5 @@
-import OpenFile from 'components/OpenFile'
 import styled from 'styled-components'
+import List from '../components/List'
 
 const WindowStyle = styled.div`
   width: 100vw;
@@ -13,7 +13,7 @@ const WindowStyle = styled.div`
 const Window = () => {
   return (
     <WindowStyle>
-      <OpenFile title="Not-To-Do List"/>
+      <List /> 
     </WindowStyle>
   )
 }
